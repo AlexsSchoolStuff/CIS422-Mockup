@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace CIS422_Mockup
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page1 : Page
     {
-        public MainWindow()
+        public Page1()
         {
             InitializeComponent();
-        }
-        private void MyWindow_Loaded(object sender, RoutedEventArgs e)
-        {
-            frame.NavigationService.Navigate(new Page1());
-            MessageBox.Show("New page");
         }
     }
 }
