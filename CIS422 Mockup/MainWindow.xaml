@@ -9,7 +9,7 @@
     <Grid>
         <Menu IsMainMenu="True" HorizontalAlignment="Center" Width="751" Background="White" FontSize="18" VerticalAlignment="Top">
             <MenuItem Header="Add Item" Click="MenuItem_Click"></MenuItem>
-            <MenuItem Header="View Inventory"></MenuItem>
+            <MenuItem Header="View Inventory" Click="MenuItem_Click_1"></MenuItem>
             <MenuItem Header="Consume Item"></MenuItem>
             <MenuItem Header="Use Simulator"></MenuItem>
             <MenuItem Header="Reports"></MenuItem>

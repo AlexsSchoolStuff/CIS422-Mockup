@@ -18,22 +18,43 @@ namespace CIS422_Mockup {
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
-        List<String> lstMain = new List<String>();
+        List<String> lstRecentItems = new List<String>();
+        List<String> lstLowStock = new List<String>();
+        List<String> lstDynamic = new List<String>();
+
         public MainWindow() {
             InitializeComponent();
-            lstMain.Add("DATE" + "\t" + "\t" + "USER" + "\t" + "ACTION" + "\t" + "\t" + "ITEM" + "\t" + "\t" + "DETAILS");
+            PopulateLists();
+            frameMain.Navigate(new MainPage(lstRecentItems, lstLowStock, lstDynamic));
+        }
+
+        public void PopulateLists() {
+
+            //Recent items
+            lstRecentItems.Add("DATE" + "\t" + "\t" + "USER" + "\t" + "ACTION" + "\t" + "\t" + "ITEM" + "\t" + "\t" + "DETAILS");
             //This is where you input data, I will just sample some data
             //Obviously this would be pulled from a database in the project, but for this it is just a hardcoded string formatted to look nice
-            lstMain.Add(DateTime.Now.ToString("d") + "\t" + "trrivet" + "\t" + "Add item" + "\t" + "IV Catheter" + "\t" + "+14");
-            lstMain.Add(DateTime.Now.ToString("d") + "\t" + "aawallac" + "\t" + "Consume item" + "\t" + "Gloves" +  "\t \t" + "-12");
-            lstMain.Add(DateTime.Now.ToString("d") + "\t" + "jefeeney" + "\t" + "Use simulator" + "\t" + "Nurse Anna" + "\t" + "+1 Use");
+            lstRecentItems.Add(DateTime.Now.ToString("d") + "\t" + "trrivet" + "\t" + "Add item" + "\t" + "IV Catheter" + "\t" + "+14");
+            lstRecentItems.Add(DateTime.Now.ToString("d") + "\t" + "aawallac" + "\t" + "Consume item" + "\t" + "Gloves" + "\t \t" + "-12");
+            lstRecentItems.Add(DateTime.Now.ToString("d") + "\t" + "jefeeney" + "\t" + "Use simulator" + "\t" + "Nurse Anna" + "\t" + "+1 Use");
 
-            frameMain.Navigate(new MainPage(lstMain));
+            //Low Stock
+            lstLowStock.Add("\t ITEM \t\t QUANTITY");
+            lstLowStock.Add("\t Gloves \t \t 5");
+            lstLowStock.Add("\t Needle Caps \t 10");
+
+            //Dynamic Items
+            lstDynamic.Add("\t ITEM \t\t TIMES UPDATED");
+            lstDynamic.Add("\t Gloves \t\t 24");
+            lstDynamic.Add("\t IV Catheter \t 19");
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e) {
-            
-            
+
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e) {
+
         }
     }
 }

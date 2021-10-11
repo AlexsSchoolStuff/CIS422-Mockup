@@ -22,14 +22,20 @@ namespace CIS422_Mockup {
             InitializeComponent();
 
         }
-        public MainPage(List<String> list) {
+        public MainPage(List<String> recentItems, List<String> lowStock, List<String> dynamicItems) {
             InitializeComponent();
-            PopulateListBoxs(list);
+            PopulateListBoxs(recentItems, lowStock, dynamicItems);
         }
 
-        public void PopulateListBoxs(List<String> list) {
-            foreach(String item in list) {
+        public void PopulateListBoxs(List<String> recentItems, List<String> lowStock, List<String> dynamicItems) {
+            foreach(String item in recentItems) {
                 lstRecentItems.Items.Add(item);
+            }
+            foreach (String item in lowStock) {
+                lstLowStock.Items.Add(item);
+            }
+            foreach(String item in dynamicItems) {
+                lstDynamicItems.Items.Add(item);
             }
 
         }
