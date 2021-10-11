@@ -5,11 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CIS422_Mockup"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="720" Width="1280">
     <Grid>
-        <Frame x:Name="frame" Content="Frame" Margin="-33,0,33,0" NavigationUIVisibility="Hidden"/>
         <Menu IsMainMenu="True" HorizontalAlignment="Center" Width="751" Background="White" FontSize="18" VerticalAlignment="Top">
-            <MenuItem Header="Add Item" Click="MyWindow_Loaded"></MenuItem>
+            <MenuItem Header="Add Item" Click="MenuItem_Click"></MenuItem>
             <MenuItem Header="View Inventory"></MenuItem>
             <MenuItem Header="Consume Item"></MenuItem>
             <MenuItem Header="Use Simulator"></MenuItem>
@@ -17,41 +16,7 @@
             <MenuItem Header="Settings"></MenuItem>
             <MenuItem Header="Checkout/In"></MenuItem>
         </Menu>
-        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label Content="Recent Activity" Margin="336,75,298,334"/>
-            <Label Content="Date" HorizontalAlignment="Left" Margin="124,115,0,0" VerticalAlignment="Top"/>
-            <Label Content="User" HorizontalAlignment="Left" Margin="226,115,0,0" VerticalAlignment="Top"/>
-            <Label Content="Action" HorizontalAlignment="Left" Margin="362,115,0,0" VerticalAlignment="Top"/>
-            <Label Content="Item" HorizontalAlignment="Left" Margin="498,115,0,0" VerticalAlignment="Top"/>
-            <Label Content="Details" HorizontalAlignment="Left" Margin="623,115,0,0" VerticalAlignment="Top"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="102,115,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="178,115,0,0" Stroke="Black" VerticalAlignment="Top" Width="155"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="333,115,0,0" Stroke="Black" VerticalAlignment="Top" Width="112"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="445,115,0,0" Stroke="Black" VerticalAlignment="Top" Width="141"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="586,115,0,0" Stroke="Black" VerticalAlignment="Top" Width="120"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="102,141,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="102,167,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="102,191,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="178,141,0,0" Stroke="Black" VerticalAlignment="Top" Width="155"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="178,167,0,0" Stroke="Black" VerticalAlignment="Top" Width="155"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="178,191,0,0" Stroke="Black" VerticalAlignment="Top" Width="155"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="333,141,0,0" Stroke="Black" VerticalAlignment="Top" Width="112"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="333,167,0,0" Stroke="Black" VerticalAlignment="Top" Width="112"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="333,191,0,0" Stroke="Black" VerticalAlignment="Top" Width="112"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="444,141,0,0" Stroke="Black" VerticalAlignment="Top" Width="142"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="444,167,0,0" Stroke="Black" VerticalAlignment="Top" Width="142"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="444,191,0,0" Stroke="Black" VerticalAlignment="Top" Width="142"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="585,141,0,0" Stroke="Black" VerticalAlignment="Top" Width="121"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="585,167,0,0" Stroke="Black" VerticalAlignment="Top" Width="121"/>
-            <Rectangle HorizontalAlignment="Left" Height="26" Margin="585,191,0,0" Stroke="Black" VerticalAlignment="Top" Width="121"/>
-            <Label Content="7/22/21 9:47" HorizontalAlignment="Left" Margin="103,141,0,0" VerticalAlignment="Top"/>
-            <Label Content="7/20/21 14:21" HorizontalAlignment="Left" Margin="98,167,0,0" VerticalAlignment="Top"/>
-            <Label Content="7/18/21 11:50" HorizontalAlignment="Left" Margin="98,191,0,0" VerticalAlignment="Top"/>
-            <Label Content="trrivet" HorizontalAlignment="Left" Margin="178,141,0,0" VerticalAlignment="Top" Width="155" HorizontalContentAlignment="Center"/>
-            <Label Content="aawallac" HorizontalAlignment="Left" Margin="178,167,0,0" VerticalAlignment="Top" Width="155" HorizontalContentAlignment="Center"/>
-            <Label Content="jefeeney" HorizontalAlignment="Left" Margin="178,193,0,0" VerticalAlignment="Top" Width="155" HorizontalContentAlignment="Center"/>
-            
-        </Grid>
+        <Frame x:Name="frameMain" Content="Frame" Margin="0,41,0,0" NavigationUIVisibility="Hidden"/>
 
     </Grid>
 </Window>
