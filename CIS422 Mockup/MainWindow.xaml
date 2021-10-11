@@ -17,6 +17,8 @@
             <MenuItem Header="Checkout/In"></MenuItem>
         </Menu>
         <Frame x:Name="frameMain" Content="Frame" Margin="0,41,0,0" NavigationUIVisibility="Hidden"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="600,590,0,0" VerticalAlignment="Top" Click="btnSave_Click" />
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="700,590,0,0" VerticalAlignment="Top" Click="btnCancel_Click"/>
 
     </Grid>
 </Window>

@@ -25,6 +25,7 @@ namespace CIS422_Mockup {
         public MainWindow() {
             InitializeComponent();
             PopulateLists();
+            HiddenButtons();
             frameMain.Navigate(new MainPage(lstRecentItems, lstLowStock, lstDynamic));
         }
 
@@ -48,13 +49,34 @@ namespace CIS422_Mockup {
             lstDynamic.Add("\t Gloves \t\t 24");
             lstDynamic.Add("\t IV Catheter \t 19");
         }
+        public void VisibleButtons() {
+            btnSave.Visibility = Visibility.Visible;
+            btnCancel.Visibility = Visibility.Visible;
+        }
+        public void HiddenButtons() {
+            btnSave.Visibility = Visibility.Hidden;
+            btnCancel.Visibility = Visibility.Hidden;
+        }
+
+
 
         private void MenuItem_Click(object sender, RoutedEventArgs e) {
-
+            VisibleButtons();
+            frameMain.Navigate(new AddItem());
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e) {
 
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e) {
+            HiddenButtons();
+            frameMain.Navigate(new MainPage(lstRecentItems, lstLowStock, lstDynamic));
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e) {
+            HiddenButtons();
+            frameMain.GoBack();
         }
     }
 }
