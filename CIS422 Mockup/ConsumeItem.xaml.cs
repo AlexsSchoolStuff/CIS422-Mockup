@@ -15,14 +15,11 @@ using System.Windows.Shapes;
 
 namespace CIS422_Mockup {
     /// <summary>
-    /// Interaction logic for AddItem.xaml
+    /// Interaction logic for ConsumeItem.xaml
     /// </summary>
-    public partial class AddItem : Page {
-        public AddItem() {
+    public partial class ConsumeItem : Page {
+        public ConsumeItem() {
             InitializeComponent();
-            
         }
-
-
     }
 }

@@ -15,14 +15,19 @@ using System.Windows.Shapes;
 
 namespace CIS422_Mockup {
     /// <summary>
-    /// Interaction logic for AddItem.xaml
+    /// Interaction logic for ViewInventory.xaml
     /// </summary>
-    public partial class AddItem : Page {
-        public AddItem() {
+    public partial class ViewInventory : Page {
+        public ViewInventory() {
             InitializeComponent();
-            
         }
+        public ViewInventory(List<String> inventory) {
+            InitializeComponent();
+            foreach(String item in inventory) {
+                lstViewItems.Items.Add(item);
+            }
 
+        }
 
     }
 }

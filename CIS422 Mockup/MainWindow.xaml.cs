@@ -21,6 +21,7 @@ namespace CIS422_Mockup {
         List<String> lstRecentItems = new List<String>();
         List<String> lstLowStock = new List<String>();
         List<String> lstDynamic = new List<String>();
+        List<String> lstViewInventory = new List<String>();
 
         public MainWindow() {
             InitializeComponent();
@@ -48,6 +49,24 @@ namespace CIS422_Mockup {
             lstDynamic.Add("\t ITEM \t\t TIMES UPDATED");
             lstDynamic.Add("\t Gloves \t\t 24");
             lstDynamic.Add("\t IV Catheter \t 19");
+
+            //View Inventory
+            //lstViewInventory.Add("\tName \t\t\t Category \t\t Quantity \t Location\t\t");
+            lstViewInventory.Add("\tGloves \t\t\t Consumable \t\t 5 \t\t H112 Cabinet 13\t");
+            lstViewInventory.Add("\tIV Catheter \t\t Consumable \t\t 50 \t\t H110 Drawer 4\t");
+            lstViewInventory.Add("\tNurse Anne \t\t Simulator \t \t ");
+            lstViewInventory.Add("\tNurse Anne \t\t Simulator \t \t ");
+            lstViewInventory.Add("\tIV Pump \t\t Asset \t\t \t15 \t \tH112");
+            lstViewInventory.Add("\tNurse Anne \t\t Simulator \t \t ");
+            lstViewInventory.Add("\tIV Pump \t\t Asset \t\t \t15 \t \t H112");
+            lstViewInventory.Add("\tGloves \t\t\t Consumable \t\t 5 \t\t H112 Cabinet 13\t");
+            lstViewInventory.Add("\tGloves \t\t\t Consumable \t\t 5 \t\t H112 Cabinet 13\t");
+            lstViewInventory.Add("\tIV Catheter \t\t Consumable\t \t 50 \t\t H110 Drawer 4\t");
+            lstViewInventory.Add("\tIV Pump \t\t Asset \t\t\t 15 \t \tH112");
+            lstViewInventory.Add("\tIV Pump \t\t Asset \t\t\t 15 \t \tH112");
+
+
+
         }
         public void VisibleButtons() {
             btnSave.Visibility = Visibility.Visible;
@@ -66,7 +85,8 @@ namespace CIS422_Mockup {
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e) {
-
+            VisibleButtons();
+            frameMain.Navigate(new ViewInventory(lstViewInventory));
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e) {
@@ -76,7 +96,12 @@ namespace CIS422_Mockup {
 
         private void btnCancel_Click(object sender, RoutedEventArgs e) {
             HiddenButtons();
-            frameMain.GoBack();
+            frameMain.Navigate(new MainPage(lstRecentItems, lstLowStock, lstDynamic));
+        }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e) {
+            VisibleButtons();
+            frameMain.Navigate(new ConsumeItem());
         }
     }
 }

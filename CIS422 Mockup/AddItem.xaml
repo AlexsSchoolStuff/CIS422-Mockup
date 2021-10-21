@@ -10,27 +10,25 @@
 
     <Grid Background="White">
         <Label Content="Item Name:" HorizontalAlignment="Left" Margin="68,52,0,0" VerticalAlignment="Top"/>
-        <Label Content="Category" HorizontalAlignment="Left" Margin="85,83,0,0" VerticalAlignment="Top"/>
-        <Label Content="Quantity" HorizontalAlignment="Left" Margin="87,127,0,0" VerticalAlignment="Top"/>
-        <Label Content="Location" HorizontalAlignment="Left" Margin="94,203,0,0" VerticalAlignment="Top"/>
-        <Label Content="N Level Specific?" HorizontalAlignment="Left" Margin="44,168,0,0" VerticalAlignment="Top" Width="99"/>
-        <Label Content="Supplier" HorizontalAlignment="Left" Margin="87,245,0,0" VerticalAlignment="Top"/>
-        <Label Content="Low Stock Alert" HorizontalAlignment="Left" Margin="57,282,0,0" VerticalAlignment="Top"/>
-        <Label Content="Features" HorizontalAlignment="Left" Margin="88,330,0,0" VerticalAlignment="Top"/>
-        <Label Content="Description" HorizontalAlignment="Left" Margin="78,379,0,0" VerticalAlignment="Top"/>
+        <Label Content="Category:" HorizontalAlignment="Left" Margin="85,83,0,0" VerticalAlignment="Top"/>
+        <Label Content="Quantity:" HorizontalAlignment="Left" Margin="87,127,0,0" VerticalAlignment="Top"/>
+        <Label Content="Location:" HorizontalAlignment="Left" Margin="94,173,0,0" VerticalAlignment="Top"/>
+        <Label Content="Supplier:" HorizontalAlignment="Left" Margin="87,215,0,0" VerticalAlignment="Top"/>
+        <Label Content="Low Stock Alert:" HorizontalAlignment="Left" Margin="57,252,0,0" VerticalAlignment="Top"/>
+        <Label Content="Features:" HorizontalAlignment="Left" Margin="88,300,0,0" VerticalAlignment="Top"/>
+        <Label Content="Description:" HorizontalAlignment="Left" Margin="78,349,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="165,56,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="cmbCategory" HorizontalAlignment="Left" Margin="165,87,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtQuantity" HorizontalAlignment="Left" Margin="165,131,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <CheckBox x:Name="chkNLevel"  HorizontalAlignment="Left" Margin="165,174,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cmbLocation" HorizontalAlignment="Left" Margin="166,203,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="cmbCabinet" HorizontalAlignment="Left" Margin="318,203,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="cmbSupplier" HorizontalAlignment="Left" Margin="165,247,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtCost" HorizontalAlignment="Left" Margin="318,249,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtLink" HorizontalAlignment="Left" Margin="469,249,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtLowStockAlert" HorizontalAlignment="Left" Margin="165,286,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="cmbFeatures" HorizontalAlignment="Left" Margin="166,334,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtAffectedItems" HorizontalAlignment="Left" Margin="318,338,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Margin="165,387,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbLocation" HorizontalAlignment="Left" Margin="166,173,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbCabinet" HorizontalAlignment="Left" Margin="318,173,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbSupplier" HorizontalAlignment="Left" Margin="165,217,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCost" HorizontalAlignment="Left" Margin="318,219,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtLink" HorizontalAlignment="Left" Margin="469,219,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtLowStockAlert" HorizontalAlignment="Left" Margin="165,256,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbFeatures" HorizontalAlignment="Left" Margin="166,304,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAffectedItems" HorizontalAlignment="Left" Margin="318,308,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Margin="165,357,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Add Items" HorizontalAlignment="Left" Margin="94,-6,0,0" VerticalAlignment="Top" FontSize="36"/>
 
 
