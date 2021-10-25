@@ -23,6 +23,7 @@ namespace CIS422_Mockup {
         List<String> lstDynamic = new List<String>();
         List<String> lstViewInventory = new List<String>();
 
+
         public MainWindow() {
             InitializeComponent();
             PopulateLists();
@@ -102,6 +103,16 @@ namespace CIS422_Mockup {
         private void MenuItem_Click_2(object sender, RoutedEventArgs e) {
             VisibleButtons();
             frameMain.Navigate(new ConsumeItem());
+        }
+
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e) {
+            VisibleButtons();
+            frameMain.Navigate(new UseItem());
+        }
+
+        private void MenuItem_Click_4(object sender, RoutedEventArgs e) {
+            VisibleButtons();
+            frameMain.Navigate(new Reports());
         }
     }
 }

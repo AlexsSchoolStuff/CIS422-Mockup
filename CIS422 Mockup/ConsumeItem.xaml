@@ -11,21 +11,12 @@
     <Grid Background="White">
         <Label Content="Consume Item" HorizontalAlignment="Left" Margin="94,-6,0,0" VerticalAlignment="Top" FontSize="36"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,80,0,0" Text="Item Name: " TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <ListView HorizontalAlignment ="Left" VerticalAlignment="Top" Margin="256,76,0,0" MinWidth="200" MinHeight="24">
-            <ListView.View>
-                <GridView>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <TextBox HorizontalAlignment="Left" Margin="101,80,0,0" Text=""  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="" HorizontalAlignment="Left" Margin="485,78,0,0" VerticalAlignment="Top" MaxWidth="200" Height="138"/>
-        <TextBlock TextWrapping="WrapWithOverflow" Margin="485,50,172,322" >
-The idea here is that you will search, and as you type the results will appear in the listbox
-        </TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="18,115,0,0" Text="Quantity:" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="101,114,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="18,155,0,0" Text="Lcoation:" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <ComboBox HorizontalAlignment="Left" Margin="101,155,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox HorizontalAlignment="Left" Margin="256,155,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="101,77,0,0" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Page>
