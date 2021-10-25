@@ -13,8 +13,8 @@
             <MenuItem Header="Consume Item" Click="MenuItem_Click_2"></MenuItem>
             <MenuItem Header="Use Simulator" Click="MenuItem_Click_3"></MenuItem>
             <MenuItem Header="Reports" Click="MenuItem_Click_4"></MenuItem>
-            <MenuItem Header="Settings"></MenuItem>
-            <MenuItem Header="Checkout/In"></MenuItem>
+            <MenuItem Header="Settings" Click="MenuItem_Click_5"></MenuItem>
+            <MenuItem Header="Checkout/In" Click="MenuItem_Click_6"></MenuItem>
         </Menu>
         <Frame x:Name="frameMain" HorizontalAlignment="Center" Content="Frame" Margin="0,31,0,0" NavigationUIVisibility="Hidden"/>
         <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Center" Margin="-100,598,0,0" VerticalAlignment="Top" Click="btnSave_Click" />

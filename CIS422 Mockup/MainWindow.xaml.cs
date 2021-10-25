@@ -114,5 +114,13 @@ namespace CIS422_Mockup {
             VisibleButtons();
             frameMain.Navigate(new Reports());
         }
+
+        private void MenuItem_Click_5(object sender, RoutedEventArgs e) {
+            frameMain.Navigate(new Settings());
+        }
+
+        private void MenuItem_Click_6(object sender, RoutedEventArgs e) {
+            frameMain.Navigate(new CheckInOut());
+        }
     }
 }
