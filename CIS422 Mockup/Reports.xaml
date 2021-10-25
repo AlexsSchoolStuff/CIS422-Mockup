@@ -17,6 +17,10 @@
             <MenuItem Header="Dyanamic Items" Click="MenuItem_Click_4"></MenuItem>
             <MenuItem Header="Checked Out" Click="MenuItem_Click_5"></MenuItem>
         </Menu>
-        <Frame x:Name="frameReports" HorizontalAlignment="Center" Content="Frame" Margin="0,31,0,0" NavigationUIVisibility="Hidden"/>
+        <DatePicker HorizontalAlignment="Center" Margin="-250,40,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Center" Margin="250,40,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Margin="-390,44,0,0" Text="From:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Margin="120,44,0,0" Text="To: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Frame x:Name="frameReports" HorizontalAlignment="Center" Content="Frame" Margin="0,80,0,0" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Page>

@@ -20,7 +20,11 @@ namespace CIS422_Mockup {
     /// </summary>
     public partial class Reports : Page {
         List<String> lstSimUses = new List<String>();
-        List<String> lstActivity= new List<String>();
+        List<String> lstActivity = new List<String>();
+        List<String> lstLow = new List<String>();
+        List<String> LstMaint= new List<String>();
+        List<String> lstDynamic = new List<String>();
+        List<String> lstChecked = new List<String>();
         public Reports() {
             InitializeComponent();
             PopulateReports();
@@ -36,6 +40,10 @@ namespace CIS422_Mockup {
             lstActivity.Add(DateTime.Now.ToString("d") + "\t" + "aawallac" + "\t\t\t" + "Consume item" + "\t" + "Gloves" + "\t \t" + "-12");
             lstActivity.Add(DateTime.Now.ToString("d") + "\t" + "jefeeney" + "\t\t\t" + "Use simulator" + "\t" + "Nurse Anna" + "\t" + "+1 Use");
 
+            lstLow.Add("\t Name \t\t Quantity\t");
+            lstLow.Add("\t Gloves \t\t 7\t");
+            lstLow.Add("\t Test \t\t 69\t");
+            lstLow.Add("\t IV Catheter \t 0\t");
 
 
         }
@@ -50,7 +58,7 @@ namespace CIS422_Mockup {
         }
 
         private void MenuItem_Click_2(object sender, RoutedEventArgs e) {
-
+            frameReports.Navigate(new LowStock(lstLow));
         }
 
         private void MenuItem_Click_3(object sender, RoutedEventArgs e) {
