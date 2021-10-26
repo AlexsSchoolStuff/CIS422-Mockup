@@ -9,7 +9,7 @@
       Title="UseItem">
 
     <Grid  Background="White">
-        <Label Content="Consume Item" HorizontalAlignment="Left" Margin="242,0,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label Content="Use Simulator" HorizontalAlignment="Left" Margin="242,0,0,0" VerticalAlignment="Top" FontSize="36"/>
         <TextBlock HorizontalAlignment="Left" Margin="32,77,0,0" Text="Simulator Name:" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <DatePicker HorizontalAlignment="Left" Margin="152,108,0,0" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="58,153,0,0" Text="Hours used:" TextWrapping="Wrap" VerticalAlignment="Top"/>
