@@ -1,0 +1,24 @@
+﻿<Page x:Class="CIS422_Mockup.ConfigureCategories"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CIS422_Mockup"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ConfigureCategories">
+
+    <Grid Background="White">
+        <ListBox x:Name="lstCategories" Margin="-200,120,0,0" HorizontalAlignment="Center" MaxHeight="200" MinHeight="150" VerticalAlignment="Top" SelectedIndex="0"/>
+        <TextBlock HorizontalAlignment="Center" Margin="-200,100,0,0" Text="Current Categories:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Content="Add Category" HorizontalAlignment="Left" Margin="160,120,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Edit Category" HorizontalAlignment="Left" Margin="160,160,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Content="Delete Category" HorizontalAlignment="left" Margin="160,200,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtAdd" HorizontalAlignment="Left" Margin="260,120,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox Name="txtEdit" HorizontalAlignment="Left" Margin="260,160,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox HorizontalAlignment="Left" Margin="260,200,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+
+        <TextBlock Name="lblName" HorizontalAlignment="Center" Margin="220,200,0,0" Text="Name:" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
+
+    </Grid>
+</Page>

@@ -17,6 +17,8 @@
             <MenuItem Header="Locations" Click="MenuItem_Click_4"></MenuItem>
         </Menu>
         
-        <Frame x:Name="frameSettings" HorizontalAlignment="Center" Content="Frame" Margin="0,40,0,0" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="frameSettings" HorizontalAlignment="Center" Content="Frame" Margin="0,40,0,40" NavigationUIVisibility="Hidden"/>
+        <Button Content="Save" HorizontalAlignment="Center" Margin="-100,427,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Cancel" HorizontalAlignment="Center" Margin="100,427,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
     </Grid>
 </Page>

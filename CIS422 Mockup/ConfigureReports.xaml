@@ -1,0 +1,21 @@
+﻿<Page x:Class="CIS422_Mockup.ConfigureReports"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CIS422_Mockup"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ConfigureReports">
+
+    <Grid Background="White">
+        <CheckBox Content="Simulator Uses" HorizontalAlignment="Left" Margin="74,93,0,0" VerticalAlignment="Top" IsChecked="false"/>
+        <CheckBox Content="Activity Log" HorizontalAlignment="Left" Margin="74,133,0,0" VerticalAlignment="Top" IsChecked="true"/>
+        <CheckBox Content="Low Stock" HorizontalAlignment="Left" Margin="74,173,0,0" VerticalAlignment="Top" IsChecked="true"/>
+        <CheckBox Content="Maintenance" HorizontalAlignment="Left" Margin="74,213,0,0" VerticalAlignment="Top" IsChecked="false"/>
+        <CheckBox Content="Dynamic Items" HorizontalAlignment="Left" Margin="74,253,0,0" VerticalAlignment="Top" IsChecked="true"/>
+        <CheckBox Content="Checked Out" HorizontalAlignment="Left" Margin="74,293,0,0" VerticalAlignment="Top" IsChecked="false"/>
+        <TextBlock HorizontalAlignment="Left" Margin="74,40,0,0" Text="Select Reports on Main Menu:" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
