@@ -9,16 +9,13 @@
       Title="MainPage">
 
     <Grid Background="White" Margin="0,0,10,0">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="137*"/>
-            <ColumnDefinition Width="263*"/>
-        </Grid.ColumnDefinitions>
-        <Label Content="Recent Activity:" HorizontalAlignment="Left" Margin="93,0,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Content="Low stock:" HorizontalAlignment="Left" Margin="232,125,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <Label Content="Dynamic Items" HorizontalAlignment="Left" Margin="100,125,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <ListBox x:Name="lstRecentItems" Margin="158,26,0,0" SelectedIndex="0" HorizontalAlignment="Left" VerticalAlignment="Top" MinWidth="528" MinHeight="88" MaxWidth="528" Grid.ColumnSpan="2"/>
-        <ListBox x:Name="lstLowStock" Margin="141,164,395,194" MinWidth="256" MaxWidth="256" MinHeight="92" MaxHeight="92" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <ListBox x:Name="lstDynamicItems" Margin="100,164,99,194" MinWidth="256" MaxWidth="256" MinHeight="92" MaxHeight="92" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <Label Content="Recent Activity:" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Low stock:" HorizontalAlignment="Center" Margin="300,125,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Dynamic Items:" HorizontalAlignment="Center" Margin="-300,125,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <ListBox x:Name="lstRecentItems" Margin="0,025,0,0" SelectedIndex="0" HorizontalAlignment="Center" VerticalAlignment="Top" MinWidth="528" MinHeight="88" MaxWidth="528" />
+        <ListBox x:Name="lstLowStock" Margin="-300,164,0,0" MinWidth="256" MaxWidth="256" MinHeight="92" MaxHeight="92"  HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstDynamicItems" Margin="300,164,0,0" MinWidth="256" MaxWidth="256" MinHeight="92" MaxHeight="92"  HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

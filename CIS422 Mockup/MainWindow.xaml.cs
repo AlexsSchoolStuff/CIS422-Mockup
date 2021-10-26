@@ -120,7 +120,7 @@ namespace CIS422_Mockup {
         }
 
         private void MenuItem_Click_6(object sender, RoutedEventArgs e) {
-            frameMain.Navigate(new CheckInOut());
+            frameMain.Navigate(new CheckInOut(frameMain));
         }
     }
 }

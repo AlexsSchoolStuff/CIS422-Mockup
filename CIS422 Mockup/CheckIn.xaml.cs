@@ -15,30 +15,23 @@ using System.Windows.Shapes;
 
 namespace CIS422_Mockup {
     /// <summary>
-    /// Interaction logic for CheckInOut.xaml
+    /// Interaction logic for CheckIn.xaml
     /// </summary>
-    public partial class CheckInOut : Page {
+    public partial class CheckIn : Page {
         Frame currentFrame;
-        List<string> lstCheckOutItems = new List<String>();
-        public CheckInOut() {
+        public CheckIn() {
             InitializeComponent();
         }
-        public CheckInOut(Frame frame) {
+        public CheckIn(Frame frame, List<String> lstCheckOutItems) {
             InitializeComponent();
             currentFrame = frame;
-            lstCheckOutItems.Add("Otoscope 1 \t\t H112 \t\t Cabinet 13 ");
-            lstCheckOutItems.Add("IV Pump 4 \t\t H111 \t\t Cabinet 3");
-            lstCheckOutItems.Add("MedicalThing1 \t\t H100 \t\t Drawer 2");
-
-
+            foreach(String item in lstCheckOutItems) {
+                lstAssetsCheckedOut.Items.Add(item);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
-            currentFrame.Navigate(new CheckOut(currentFrame));
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e) {
-            currentFrame.Navigate(new CheckIn(currentFrame, lstCheckOutItems));
+            currentFrame.Navigate(new CheckInOut(currentFrame));
         }
     }
 }

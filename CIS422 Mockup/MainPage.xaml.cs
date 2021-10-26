@@ -37,6 +37,9 @@ namespace CIS422_Mockup {
             foreach(String item in dynamicItems) {
                 lstDynamicItems.Items.Add(item);
             }
+            lstRecentItems.SelectedIndex = 0;
+            lstLowStock.SelectedIndex = 0;
+            lstDynamicItems.SelectedIndex = 0;
 
         }
     }

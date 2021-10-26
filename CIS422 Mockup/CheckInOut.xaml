@@ -8,7 +8,9 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="CheckInOut">
 
-    <Grid>
-        
+    <Grid Background="White">
+        <Button Content="Check out" HorizontalAlignment="Left" Margin="49,178,0,0" VerticalAlignment="Top" Height="85" Width="171" Click="Button_Click"/>
+        <Button Content="Check in" HorizontalAlignment="Left" Margin="431,178,0,0" VerticalAlignment="Top" Height="85" Width="171" Click="Button_Click_1"/>
+
     </Grid>
 </Page>
